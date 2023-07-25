@@ -1,0 +1,142 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  justify-content: center;
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 4%;
+  color: #FEF2BF;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .btn {
+  display: flex;
+
+  margin: 25px;
+  height: 150px;
+  width: 150px;
+  border: 10px solid black;
+  border-radius: 20%;
+} */
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+  width: 450px;
+height: 135px;
+  border-top-left-radius: 225px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+
+.circle {
+  width: 450px;
+  height: 450px;
+  border-radius: 225px;
+  background-color: grey;
+  display: flex;
+  margin: auto;
+  
+  transform: rotate(47deg);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button:active {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.play {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  background-color: #91C8E4;
+  display: flex;
+  margin: auto;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.4rem;
+  padding-top: 10px;
+  color: blanchedalmond;
+  transform: rotate(-47deg);
+  z-index: 111;
+}
+
+.div{
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  background-color: #1A5D1A;
+  border-start-start-radius: 225px;
+}
+
+.div2{
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  background-color: red;
+  border-start-start-radius: 225px;
+  transform: rotate(90deg);
+  left: 226px;
+}
+
+.div3{
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  background-color: rgb(13, 18, 130);
+  border-start-start-radius: 225px;
+  transform: rotate(-88deg);
+  margin-top: 250px;
+  right: 223px;
+  bottom: .04px;
+}
+.button{
+  border: 3px solid;
+}
+.div4{
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  background-color: yellow;
+  border-start-start-radius: 225px;
+  transform: rotate(-179.5deg);
+  margin-top: 221px;
+  left: 223px;
+  top: 2.5px;
+}
+
