@@ -25,13 +25,11 @@ body {
 }
 
 .circle {
-  width: 450px;
-  height: 450px;
-  border-radius: 225px;
-  background-color: grey;
+  position: relative;
   display: flex;
   margin: auto;
-  transform: rotate(47deg);
+  justify-content: center;
+
 }
 
 .button {
@@ -40,63 +38,58 @@ body {
   justify-content: center;
 }
 .button:active {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  background-color: grey;
+  box-shadow: 0 0 10px rgb(87, 84, 84);
+  filter:contrast(10px);
   z-index: 11;
 }
 .play {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  border-radius: 90px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
   background-color: #91C8E4;
-  display: flex;
-  margin: auto;
-  border: none;
+  border: 12px solid #333333 ;
   font-family: 'Press Start 2P', cursive;
   font-size: 1.4rem;
   padding-top: 10px;
   color: blanchedalmond;
-  transform: rotate(-47deg);
   z-index: 111;
 }
 
 .div{
-  position: absolute;
-  width: 189px;
-  height: 190px;;
-  background-color: #1A5D1A;
+  border: 12px solid #333333;
+  width: 200px;
+  height: 200px;
+  background-color: #00A74A;
   border-start-start-radius: 225px;
 }
 
 .div2{
-  position: absolute;
-  width: 206px;
-    height: 206px;
-  background-color: red;
+  border: 12px solid #333333;
+  width: 200px;
+  height: 200px;
+  background-color: #094A8F;
   border-start-start-radius: 225px;
-  transform: rotate(180deg);
-  margin: 226px;
+  transform: rotateX(180deg);
 }
 
 .div3{
-  position: absolute;
-  width: 190px;
-  height: 206px;
-  background-color: rgb(13, 18, 130);
+  border: 12px solid #333333;
+  width: 200px;
+  height: 200px;
+  background-color: #9F0F17;;
   border-start-start-radius: 225px;
-  transform: rotateX(180deg);
-  top: 226px;
-}
-.button{
-  border: 19px solid;
+  transform: rotate(90deg);
 }
 .div4{
-  position: absolute;
-  width: 206px;
-  height: 190px;
-  background-color: yellow;
+  border: 12px solid #333333;
+  width: 200px;
+  height: 200px;
+  background-color:  #CCA707;
   border-start-start-radius: 225px;
-  transform: rotateY(180deg);
-  left: 226px;
+  transform: rotate(180deg);
 }
+
+
