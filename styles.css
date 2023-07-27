@@ -3,25 +3,27 @@ body {
   background-color: rgb(145, 200, 228);
 }
 
+
 #level-title {
   justify-content: center;
   display: flex;
+  align-items: center;
+  font-size: 2.2rem;
   font-family: 'Press Start 2P', cursive;
-  font-size: 2.4rem;
-  margin: 4%;
+  margin: 3.5%;
   color: #FEF2BF;
 }
+
+
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
 
-
-
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
-  
+
 }
 
 .circle {
@@ -37,11 +39,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .button:active {
   box-shadow: 0 0 10px rgb(87, 84, 84);
-  filter:contrast(10px);
+  filter: contrast(10px);
   z-index: 11;
 }
+
 .play {
   position: absolute;
   top: 50%;
@@ -49,16 +53,15 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  background-color: #91C8E4;
-  border: 12px solid #333333 ;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1.4rem;
+  background-color: #FFFFFF;
+  border: 12px solid #333333;
+  font-size: 32px;
+  font-family: 'Alfa Slab One';
+  color: #222;
   padding-top: 10px;
-  color: blanchedalmond;
   z-index: 111;
 }
-
-.div{
+.div {
   border: 12px solid #333333;
   width: 200px;
   height: 200px;
@@ -66,7 +69,7 @@ body {
   border-start-start-radius: 225px;
 }
 
-.div2{
+.div2 {
   border: 12px solid #333333;
   width: 200px;
   height: 200px;
@@ -75,21 +78,20 @@ body {
   transform: rotateX(180deg);
 }
 
-.div3{
+.div3 {
   border: 12px solid #333333;
   width: 200px;
   height: 200px;
-  background-color: #9F0F17;;
+  background-color: #9F0F17;
   border-start-start-radius: 225px;
   transform: rotate(90deg);
 }
-.div4{
+
+.div4 {
   border: 12px solid #333333;
   width: 200px;
   height: 200px;
-  background-color:  #CCA707;
+  background-color: #CCA707;
   border-start-start-radius: 225px;
   transform: rotate(180deg);
 }
-
-

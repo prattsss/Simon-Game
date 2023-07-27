@@ -7,12 +7,17 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).on("keypress", function () {
+function playZone(){
   if (!started) {
     $("#level-title").html("Level " + level);
     sequence();
     started = true;
   }
+  $(".play").html
+}
+
+$(document).on("keypress", function () {
+
 });
 
 $(".play").on("click", function(){
@@ -46,7 +51,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);
-    $("#level-title").html("Game Over, Press Any Key to Restart");
+    $("#level-title").html("Game Over, Press Any Key to Restart").css({"font-size" : "1.9rem", "color": "#d42831" });
     startOver();
   }
 }
@@ -54,7 +59,7 @@ function checkAnswer(currentLevel) {
 function sequence() {
   userClickedPattern = [];
   level++;
-  $("#level-title").html("Level " + level);
+  $("#level-title").html("Level " + level).css("color", "#FEF2BF");
   var randomNumber = Math.floor(Math.random() * 4);
   var color = buttonColours[randomNumber];
   pattern.push(color);
